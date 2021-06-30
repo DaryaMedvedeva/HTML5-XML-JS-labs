@@ -1,0 +1,55 @@
+UNIVERSITY {
+    display: block;
+    margin: 50px 100px;
+    border: 3px solid #124444;
+    text-align: center;
+    font-size: 30px;
+    color: #921636;
+    background-color: #0d9dff;
+}
+
+FACULTY {
+    display: block;
+    text-align: center;
+}
+
+SPECIALIZATION {
+    display: block;
+    text-align: center;
+    margin: 10px 20px 10px 20px;
+    margin-top: 12pt;
+    border: 1px double #a24ea0;
+    font-size: 15pt;
+}
+
+NAME {
+    display: block;
+    font-style: italic;
+    text-align: center;
+    border: 1px solid #f24ea0;
+}
+
+TIME {
+    display: block;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid #d24ea0;
+}
+
+EXAM {
+    display: block;
+    text-align: center;
+    border: 1px solid #324ea0;
+}
+
+BALL {
+    display: block;
+    text-align: center;
+    border: 1px solid #124ea0;
+}
+
+PAGES {
+    display: block;
+    text-align: center;
+    border: 1px solid #004ea0;
+}

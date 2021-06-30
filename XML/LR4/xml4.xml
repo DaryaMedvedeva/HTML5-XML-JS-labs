@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="xsl4.xsl"?>
+<main>
+    
+    <student>
+        <firstname>Милана</firstname>
+        <secondname>Милович</secondname>
+        <thirdname>Викторовна</thirdname>
+        <passingscore>7</passingscore>
+        <yearofbirth>2000</yearofbirth>
+    </student>
+
+    <student>
+        <firstname>Сергей</firstname>
+        <secondname>Сергеев</secondname>
+        <thirdname>Сергеевич</thirdname>
+        <passingscore>5.7</passingscore>
+        <yearofbirth>2002</yearofbirth>
+    </student>
+    
+    <student>
+        <firstname>Елизавета</firstname>
+        <secondname>Варчик</secondname>
+        <thirdname>Романовна</thirdname>
+        <passingscore>6</passingscore>
+        <yearofbirth>2001</yearofbirth>
+    </student>
+
+    <student>
+        <firstname>Григорий</firstname>
+        <secondname>Король</secondname>
+        <thirdname>Серафимович</thirdname>
+        <passingscore>6.7</passingscore>
+        <yearofbirth>2002</yearofbirth>
+    </student>
+
+    <student>
+        <firstname>Петр</firstname>
+        <secondname>Петров</secondname>
+        <thirdname>Петрович</thirdname>
+        <passingscore>8</passingscore>
+        <yearofbirth>2000</yearofbirth>
+    </student>
+
+    <student>
+        <firstname>Дарья</firstname>
+        <secondname>Медведева</secondname>
+        <thirdname>Игоревна</thirdname>
+        <passingscore>8.1</passingscore>
+        <yearofbirth>2002</yearofbirth>
+    </student>
+    
+    <student>
+        <firstname>Амалия</firstname>
+        <secondname>Романова</secondname>
+        <thirdname>Сергеевна</thirdname>
+        <passingscore>5.7</passingscore>
+        <yearofbirth>2002</yearofbirth>
+    </student>
+
+    <student>
+        <firstname>Иван</firstname>
+        <secondname>Иванов</secondname>
+        <thirdname>Иванович</thirdname>
+        <passingscore>6</passingscore>
+        <yearofbirth>2001</yearofbirth>
+    </student>
+    
+</main>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>XML 5</title>
+	    <style>
+        @font-face
+{
+    font-family: cool;
+    src:url(14217.ttf);
+}
+body
+{
+    font-family: cool;
+    background: #E2C2C2;
+    margin:20px;
+   
+}
+td,th
+{
+    padding:4px;
+}
+table,td,th
+{
+	border: 1px solid black;
+	 border-collapse: collapse;
+
+}
+table 
+{
+	margin-top: 20px;
+}
+    </style>
+</head>
+<body>
+	<input type="file" name="" id="filechoice" onchange="openFile(event)">
+<table id="tbl"></table>	
+</body>
+<script>
+var openFile = function(event) { 
+var text = ""; 
+var input = event.target; 
+var reader = new FileReader(); 
+reader.onload = function(){ 
+text = reader.result; 
+text = reader.result.substring(0, 1000); 
+
+if (window.DOMParser) // Включаем обработчик XML структуры 
+{ // Firefox, Chrome, Opera и др. 
+parser=new DOMParser(); 
+xmlDoc = parser.parseFromString(text,"application/xml"); 
+} 
+else //Internet Explorer 
+{ 
+xmlDOC=new ActiveXObject("Microsoft.XMLDOM"); 
+xmlDoc.async=false; 
+xmlDoc.loadXML(text); 
+}
+ var a,b,c,i,txt;
+ txt="";
+ a=xmlDoc.getElementsByTagName("student");
+ for (i=0; i<a.length; i++)
+ {
+ 	if (i==0) txt+="<tr><th>Имя</th><th>Фамилия</th><th>Отчество</th><th>Средний балл</th><th>Год рождения</th></tr>";
+ 	txt+="<tr>";
+ 	for(b=0;b<a[i].childNodes.length;b++)
+ 	{
+ 		if(a[i].childNodes[b].nodeType==1) txt+="<td>" + a[i].childNodes[b].childNodes[0].nodeValue + "</td>";
+ 		
+ 	}
+ 	txt+="</tr>";
+ }
+document.getElementById("tbl").innerHTML= txt;
+};
+reader.readAsText(input.files[0]);
+};
+
+</script>
+</html>

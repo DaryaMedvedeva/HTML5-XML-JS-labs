@@ -1,0 +1,32 @@
+  <?xml version="1.0"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="MAIN">
+    <xs:complexType>
+       <xs:sequence>
+         <xs:element name="UNIVESITY" type="xs:string">
+    <xs:complexType>
+       <xs:sequence>
+          <xs:element name="FACULTY" type="xs:string">
+            <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="SPECIALIZATION" type="xs:string">
+                   <xs:complexType>
+                      <xs:sequence>
+                      <xs:element name="NAME" type="xs:string"/>
+                      <xs:element name="TIME" type="xs:string"/>
+                      <xs:element name="EXAM" type="xs:string"/>
+                      <xs:element name="BALL" type="xs:string"/>
+                      <xs:element name="PAGES" type="xs:string"/>
+                   </xs:sequence>
+                </xs:complexType>
+               </xs:element> 
+            </xs:sequence>
+          </xs:complexType>
+             </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+     </xs:element>
+          </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="utf-8">
+    <STYLE>
+
+.container {
+    width: 1000px;
+    height: 200px;
+    background: white;
+}
+.first {
+    width: 200px;
+    height: 200px;
+}
+#box1 {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    user-select : none;я
+}
+#box2 {
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    user-select : none;
+}
+#img {
+    position: absolute;
+    background-image: url("1.jpg");
+    background-size: 200px;
+    height: 200px;
+    width: 200px;
+    user-select : none;
+}
+#text{
+    position: absolute;
+    user-select : none;
+}
+</STYLE>
+</head>
+
+<body>
+<div class = "container">
+    <div id = "box1">
+        <img src="1.jpg" alt="" class="first">
+    </div>
+</div>
+
+<div class = "container">
+    <div id = "box2">
+        <img src="1.jpg" alt="" class="first">
+    </div>
+</div>
+
+<div  id="img"></div>
+<div  id="text">text</div>
+
+    <script>
+    var pos = 0;
+    var box = document.getElementById('box1');
+    box.onclick = function(){
+
+        var t = setInterval (move1,10);
+        function move1() {
+            if (pos >= 800){
+                clearInterval(t);
+            }
+            else {
+                pos +=2;
+                box.style.left = pos + 'px';
+            }
+        }
+    }
+
+
+    var posLeft = 0;
+    var posTop =200;
+    var posRight = 200;
+    var posBottom = 400;
+    var box1 = document.getElementById('box2');
+    box1.onclick = function() {
+        var t1 = setInterval(move1, 10);
+
+        function move1() {
+            if (posLeft >= 200) {
+                if (posTop >= 400) {
+                    if (posRight == 0) {
+                        if (posBottom == 200) {
+                            clearInterval(t1);
+                        }
+                        else {
+                            posBottom -= 2;
+                            box1.style.top = posBottom+ 'px';
+                        }
+                    }
+                    else {
+                        posRight -= 2;
+                        box1.style.left = posRight+ 'px';
+                    }
+                }
+                else {
+                    posTop += 2;
+                    box1.style.top = posTop+ 'px';
+                }
+            }
+            else {
+                posLeft += 2;
+                box1.style.left = posLeft + 'px';
+            }
+        }
+    };
+    
+    var img = document.getElementById("img");
+    img.onmousedown = function(e) {
+
+        document.body.appendChild(img);
+        img.style.zIndex = 1000;
+
+        function moving(e) {
+            img.style.left = e.pageX - img.offsetWidth / 2 + 'px';
+            img.style.top = e.pageY - img.offsetHeight / 2 + 'px';
+        }
+        document.onmousemove = function(e) {
+            moving(e);
+        }
+        img.onmouseup = function() {
+            document.onmousemove = null;
+            img.onmouseup = null;
+        }
+    };
+
+
+    var text = document.getElementById("text");
+    text.onmousedown = function(e) {
+
+        document.body.appendChild(text);
+        text.style.zIndex = 1000;
+
+        function moving(e) {
+            text.style.left = e.pageX - text.offsetWidth / 2 + 'px';
+            text.style.top = e.pageY - text.offsetHeight / 2 + 'px';
+        }
+        document.onmousemove = function(e) {
+            moving(e);
+        }
+        text.onmouseup = function() {
+            document.onmousemove = null;
+            text.onmouseup = null;
+        }
+    };
+    </script>
+
+<script src="main.js"></script>
+</body>
+
+
+
+
+
+</html>

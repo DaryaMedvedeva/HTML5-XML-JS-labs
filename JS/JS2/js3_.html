@@ -1,0 +1,35 @@
+<html>
+<head>
+<script language="JavaScript">
+function table() {
+var a = prompt('Введите a');
+var b = prompt('Введите b');
+document.write('<table border=1>');
+document.write('<tr>');
+document.write ('<td>'); document.write ('Радиус'); document.write ('</td>');
+document.write ('<td>'); document.write ('Площадь круга'); document.write ('</td>');
+document.write ('<td>'); document.write ('Длина окружности'); document.write ('</td>');
+document.write('</tr>');
+do {
+document.write('<tr>');
+document.write ('<td>'); document.write (a); document.write ('</td>');
+document.write ('<td>'); document.write (Math.PI*a*a); document.write ('</td>');
+document.write ('<td>'); document.write (2*Math.PI*a); document.write ('</td>');
+document.write('</tr>');
+a=a+0.3;
+Console.log(a);
+} while (a<=b){
+	Console.log(a);
+	Console.log(b);
+
+
+
+}
+document.write('</table>');
+}
+</script>
+</head>
+<body>
+<input type='button' value='1 задание' onclick='table()'>
+</body>
+</html>

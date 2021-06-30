@@ -1,0 +1,255 @@
+<HTML>
+<HEAD>
+  <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+    <meta charset="utf-8">
+<TITLE>Моя первая страница</TITLE>
+  <link rel="stylesheet" href="style.css">
+<STYLE>
+P{text-align: center; 
+letter-spacing: 0.5em;
+    word-spacing: 7px;
+    line-height: 4;
+    text-indent: 6%;
+ font-family: 'GABRIOLA', sans-serif;
+  color: maroon;
+}
+p:first-child {
+     color: purple; /*не работает*/
+    }
+p:first-letter{color:red; font-size: 200%; border: 3px solid;}
+p:first-line{text-decoration: underline}
+ .M{ font-family: 'Snell Roundhand', cursive
+ text-align: right;
+ color: #800080; 
+    font-weight: bold;
+	}
+.B{
+text-align: right; 
+letter-spacing: 0.2em;
+    word-spacing: 3px;
+    line-height: 1;
+    text-indent: 1%;
+ font-family: 'Roboto', sans-serif;
+  color: rgb(0, 0, 128);
+}
+b:first-letter {
+background: url(/images/star.jpg) left center no-repeat;
+padding: 7px 0 6px 30px;
+}
+ ul li{
+    list-style:none;
+    line-height:51px;
+}
+ul li:before {
+    content:"";
+    background:url(book.png);
+    float:left;
+    width:50px;
+    height:50px;
+    margin-right:10px;
+    background-repeat: no-repeat;
+}
+
+ 
+table {
+    border-collapse: collapse; 
+    background: DarkRed; 
+    border: 4px solid Olive; 
+   }
+ th {
+   font-family:'Impact',sans-serif;
+    padding: 4px; /* Поля вокруг текста */
+    border: 2px solid tomato; 
+   } 
+ td{
+   font-family:'Mistral',cursive;
+    padding: 7px; 
+    border: 3px dotted tomato; 
+   }
+v:before {content: " студент I курса,"; 
+   }
+v:after {
+content: " проживающая по адресу Пономаренко 24-61,"; 
+   }
+   a {
+    color: red; 
+   }
+ a:visited {
+    color: #cecece;
+   }
+   
+a:hover {
+    color: green; 
+   }
+ a:active {
+    color: blue}
+h2{text-shadow:2px 2px 2px #FFAE00, 2px 2px 15px #1435AD}
+h3{text-shadow:1px 1px 10px #FFAE00;}
+@font-face 
+{font-family:opensans;/* Задаем имя шрифта */
+src:url('CormorantInfant-Bold.ttf')/* Указываем местонахождение нашего шрифта */ }
+
+   P {
+    font-family: opensans;
+   }
+</STYLE>
+</HEAD>
+<BODY style="background: linear-gradient(to top, SkyBlue, Plum);"">
+<h1>Я,<v> Медведева Дарья Игоревна,</v> изучаю <font color="red">HTML</font> и CSS</h1>
+<h2>Биография</h2>
+<h3>Обо мне</h3>
+<P>Я <span style=" font-size:17px;
+	letter-spacing: 0.6em;
+    word-spacing: 10px;
+    line-height: 3;
+    text-indent: 30px;
+	color: rgb(100, 185, 140);
+	font-family:'Impact',sans-serif;"> человек</span>, который часто накручивает себя, а потом понимает, что игра не стоила свеч.<br>
+Полностью избавиться от мыслей невозможно, но вполне реально переиначить их ход.<br>
+Есть десять способов, помогающих бороться с внезапным приступом паники.</P>
+<h3>Статья</h3>
+<P class="B"> В моём сознании уют всегда ассоциировался с  <span style="color:red; font-size:17px;
+	letter-spacing: 0.2em;
+    word-spacing: 7px;
+    line-height: 4;
+    text-indent: 10px;
+	font-family:'Century',serif;"> осенне-зимним периодом,</span> когда приносишь с улицы букет жёлто-рыже-красных листьев, уже прохладный воздух и спелую тыкву с рынка.<br>
+Это время одеваться теплее, кутаться в махровый плед по вечерам и закрывать окна на ночь.<br>
+Все мои теплейшие воспоминания связаны с родительским домом, который преображался осенью и зимой. <br></P>
+<h3>Цитата</h3>
+<P class="M">Берегите друг друга, сейчас такое время, что очень сложно найти что-то действительно стоящее, настоящее.<br>
+А мы из-за своей глупой гордости при малейшей ошибке сразу же отказываемся от своего счастья.<br>
+<span style="color:red; font-size:20px;
+	letter-spacing: 0.6em;
+    word-spacing: 10px;
+    line-height: 3;
+    text-indent: 30px;
+	color: rgb(0, 255, 0); font-family:'Mistral',cursive;">Нужно учиться прощать,</span> ценить то, что у вас есть.</P>
+<ul style="list-style-image: url(cat1.jpg);"><h3>Краткая информация</h3>
+<li>Дата рождения: 19.06.2002</li>
+<li>Место жительсва: г. Минск, ул. Пономаренко, 24-61</li>
+<li>Возраст: 17 лет</li></ul>
+<ul><h3>Увлечения</h3>
+<li type="square"><span style="color: red; font-size: 2em" >Вокал</span></li>
+<li type="square"><span style="color: red; font-size: 2em">Фотография</span></li>
+<li type="square"><span style="color: red; font-size: 2em">Танцы</span></li></ul>
+<ul><h3>Друзья</h3>
+<li type="circle">Лиза</li>
+<li type="circle">Ира</li>
+<li type="circle">Диана</li>
+<h2>Таблица</h2>
+<table border>
+  <tbody>
+<tr>
+<th>Фио</th>
+<td colspan="3"><a href="lr1pg2.html">Медведева Дарья Игоревна</a></td></tr>
+<tr>
+<td>Cвое фото</td>
+<td colspan="3">Адрес:ул. Пономаренко, 24-61</td>
+</tr>
+<tr>
+<th rowspan="6">1 семестр
+2019/2020 уч.года</th></tr>
+<tr>
+    <td class="first">Дата</td>
+    <td>Предмет</td>
+    <td>Оценка</td>
+  </tr>
+  <tr>
+    <td class="first">11.12.2019</td>
+    <td>ОИТ</td>
+    <td id="id1">8</td> 
+  </tr>
+   <tr>
+    <td class="first">23.12.2019</td>
+    <td>Математика</td>
+    <td id="id2">9</td> 
+  </tr>
+   <tr>
+    <td class="first">04.01.2020</td>
+    <td>ОАП</td>
+    <td id="id3">7</td> 
+  </tr>
+    <tr>
+    <td class="first">14.01.2019</td>
+    <td>Физика</td>
+    <td id="id4">8</td> 
+  </tr>
+</tbody>
+</table>
+
+ <script>
+    function task1() {
+        if (!document.all)
+            document.all = document.getElementsByTagName("*");
+        var allTags ="Количество всех тегов="+document.all.length+"\n";
+        for (var i = 0; i < document.all.length; i++)
+            allTags += document.all[i].tagName + '  '+i+ "\n";
+        alert(allTags);
+    }
+
+
+   function task2() {
+        var count = 1;
+        var arr = new Array();
+        for (var i = 0; i < document.body.childNodes.length; i++) {
+            var child = document.body.childNodes[i];
+            if (child.tagName !== undefined) {
+                arr.push("\n",child.tagName);
+                alert(count + "-й элемент: " + child.tagName);
+                count++;
+            }
+
+        }
+
+        alert('Все элементы body' +arr);
+    }
+    function task3() {
+
+
+
+        if (!document.all)
+            document.all = document.getElementsByTagName("*");
+        for (var i = 0; i < document.all.length; i++)
+            if(document.all[i].tagName == 'SPAN'){
+                alert(document.all[i].innerHTML);
+                break;
+            }
+
+        if (!document.all)
+            document.all = document.getElementsByTagName("SPAN");
+        var allTags ="Количество всех тегов span ="+document.all.length+"\n";
+        for (var i = 0; i < document.all.length; i++)
+            if(document.all[i].tagName == 'SPAN'){
+                alert(document.all[i].innerHTML);
+                break;
+            }
+        alert($("#span").text());
+    }
+
+   function task4() {
+
+        var x =0;
+       // var table = document.body.children[11];
+        var table=getElementById(id1);
+       // for (var i = 3;i<7;i++) {
+            //alert(table.rows[i].cells[3].innerHTML);
+            x+=getElementById(id1);
+            x+=getElementById(id2);
+            x+=getElementById(id3);
+            x+=getElementById(id4);
+
+       // }
+        alert(x);
+       // newspan = ($("#newspan").text()) + x;
+       // alert (newspan);
+
+    }
+
+    task1();
+    task2();
+    task3();
+    task4();
+</script>
+</BODY>
+</HTML>

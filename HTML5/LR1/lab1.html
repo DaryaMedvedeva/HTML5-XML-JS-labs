@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>LAB1</title>
+</head>
+<body>
+<h1>Я,<mark>Медведева Дарья Игоревна</mark>, изучаю HTML5</h1>
+<audio src="gb.mp3" controls autoplay>
+    <p>Ваш браузер не поддерживает формат данного аудиофайла.</p>
+</audio>
+</br>
+<video src="spb.mp4"
+       poster="sp.png"
+       width="400" height="300"
+       preload
+       controls
+       loop>
+    <p>Губка Боб</p>
+</video>
+</br>
+
+<p>Для считывания координат нажмите на кнопку</p>
+<input type="button" value=" Координаты" onclick =
+        "getCoordinates()">
+
+<script>
+    function getCoordinates() {
+        navigator.geolocation.getCurrentPosition(showCoordinates);
+    }
+    function showCoordinates(position) {
+        document.write("Широта:" + position.coords.latitude + "<br/>");
+        document.write("Долгота:" + position.coords.longitude);
+    }
+</script>
+
+</body>
+</html>

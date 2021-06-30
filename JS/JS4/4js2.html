@@ -1,0 +1,42 @@
+<html>
+<head>
+<script>
+    function Student(name1,name2,a,b,c) {
+
+        this.name1=name1;
+        this.name2=name2;
+        this.a=a;
+        this.b=b;
+        this.c=c;
+
+        this.out=function out() {
+
+            document.write('Имя:  ', this.name1, '  Фамилия:  ', this.name2, '</br>');
+        }
+        this.AverageMark=function AverageMark() {
+            var average = (this.a+this.b+this.c)/3;
+            document.write('Средний балл:  ', average, '</br>');
+        }
+    }
+    st1 = new Student('Darya', 'Medvedeva', 4, 4, 5);
+    st2 = new Student('Nikita', 'Velesevich', 5, 5, 6);
+    st3 = new Student('Yra', 'Ylasevich', 6, 6, 7);
+    st4 = new Student('Vova', 'Danilkovich', 7, 7, 8);
+    document.write(st1.name1, "  ", st1.name2, "  ", st1.a, "  ", st1.b, "  ", st1.c, " </br> ");
+    document.write(st2.name1, "  ", st2.name2, "  ", st2.a, "  ", st2.b, "  ", st2.c, " </br> ");
+    document.write(st3.name1, "  ", st3.name2, "  ", st3.a, "  ", st3.b, "  ", st3.c, " </br> ");
+    document.write(st4.name1, "  ", st4.name2, "  ", st4.a, "  ", st4.b, "  ", st4.c, " </br> ");
+    st1.out();
+    st2.out();
+    st3.out();
+    st2.out();
+    st1.AverageMark();
+    st2.AverageMark();
+    st3.AverageMark();
+    st4.AverageMark();
+</script>
+</head>
+<body>
+
+</body>
+</html>

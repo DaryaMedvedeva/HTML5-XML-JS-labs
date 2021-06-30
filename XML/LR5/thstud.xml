@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/xsl" href="xsl4.xsl"?>
+<main>
+    <student>
+        <firstname>Павел</firstname>
+        <secondname>Боложинский</secondname>
+        <thirdname>Сергеевич</thirdname>
+        <passingscore>4.8</passingscore>
+        <yearofbirth>2001</yearofbirth>
+    </student>
+
+    <student>
+        <firstname>Максим</firstname>
+        <secondname>Шихов</secondname>
+        <thirdname>Владиславович</thirdname>
+        <passingscore>8.1</passingscore>
+        <yearofbirth>2000</yearofbirth>
+    </student>
+</main>

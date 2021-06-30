@@ -1,0 +1,73 @@
+<html>
+<head>
+<script>
+    function new_win() {
+
+    var wnew=window.open("","","width=200,height=200"); wnew.alert('Привет!');
+
+    wnew.document.write("<input value=\"Закрыть окно\" type=button onclick= 'window.close(); '>"
+        + "</br>");
+
+    wnew.document.write("<input value=\"Имя окна\" type=button onclick= 'document.write(\"Первое окно\" + \"</br>\") '>"
+        + "</br>");
+}
+
+
+
+function task2(){
+    document.write("ЗАДАНИЕ 4");
+    document.write("</br></br>");
+    var x = new Date();
+    var firstCol = ["всю информацию о браузере пользователя",
+        "версия браузера",
+        "название браузера",
+        "кодовое название браузера",
+        "ОС, которую использует пользователь",
+        "включена ли поддержка Java в браузере",
+        "ширина экрана",
+        "высота экрана",
+        "глубину цвета",
+        "URL, которые были посещены в данном окне браузера",
+        "URL текущего документа",
+        "путь к загруженному документу",
+        "имя домена загруженного документа"
+];
+
+
+
+    var secondCol = [navigator.userAgent,
+        navigator.appVersion,
+        navigator.appName,
+        navigator.appCodeName,
+        navigator.platform,
+        navigator.javaEnabled(),
+        screen.width,
+        screen.height,
+        screen.colorDepth,
+        history,
+        location.href,
+        location.pathname,
+        location.host
+    ];
+    document.write("<link rel=stylesheet type=text/css href='main.css'/>");
+    document.write("<table class='table' border='1'>");
+    for(var i = 0; i < 13; i++) {
+        document.write("<tr class='row'>");
+        document.write("<td class='col'>" + firstCol[i] + "</td>");
+        document.write("<td class=' col1'>" + secondCol[i] + "</td>");
+        document.write("</tr>");
+    }
+    document.write("</table>");
+    document.write("</br>");
+
+}
+task2();
+</script>
+</head>
+<body>
+<form>
+    <input type=button value="Открыть новое окно" onclick='new_win()'>
+</form>
+</body>
+</html>
+

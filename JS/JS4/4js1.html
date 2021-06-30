@@ -1,0 +1,49 @@
+<html>
+<head>
+<script>
+        function Gruppa(n,spec,kolich) {
+
+        this.n=n;
+        this.spec=spec;
+        this.kolich=kolich;
+
+        this.add_stud=function add_stud(k) {
+            this.kolich+=k;
+            document.write('В группу ' + this.n + ' добавили '+ k + ' студентов.<br\>');
+        }
+        this.sub_stud=function sub_stud(f) {
+            this.kolich-=f;
+            document.write('В группе ' + this.n + ' отняли '+ f + ' студентов.<br\>');
+        }
+    }
+    gr1 = new Gruppa(1, 'ИСиТ', 28);
+    gr2 = new Gruppa(4, "ПОИТ", 30);
+    gr3 = new Gruppa(7, "ПОИБМС", 20);
+    gr4 = new Gruppa(9, "ДЭиВИ", 25);
+    Gruppa.prototype.kurs=this.kurs;
+    gr1.kurs=1;
+    gr2.kurs=1;
+    gr3.kurs=1;
+    gr4.kurs=1;
+
+    document.write(gr1.n,"  ",gr1.spec,"  ", gr1.kolich,"  ", gr1.kurs, " </br> ");
+    document.write(gr2.n,"  ",gr2.spec,"  ", gr2.kolich,"  ", gr2.kurs, " </br> ");
+    document.write(gr3.n,"  ",gr3.spec,"  ", gr3.kolich,"  ", gr3.kurs, " </br> ");
+    document.write(gr4.n,"  ",gr4.spec,"  ", gr4.kolich,"  ", gr4.kurs, "</br>");
+    gr1.add_stud(1);
+    gr2.add_stud(2);
+    gr3.add_stud(3);
+    gr4.add_stud(4);
+    gr1.sub_stud(2);
+    gr2.sub_stud(4);
+    gr3.sub_stud(6);
+    gr4.sub_stud(8);
+
+    document.write(gr1.kolich,'  ',gr2.kolich,'  ', gr3.kolich,'  ', gr4.kolich, '</br></br>');
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<html>
+<head>
+<script>
+	values = new Array();
+    values[0] = 6*Math.PI +3*Math.E;
+    values[1] = 2*Math.cos(4) +Math.cos(12)+8*Math.E;
+    values[2] = 3*Math.sin(9) +Math.log(5)+Math.sqrt(3);
+    values[3] = 2*Math.tan(5) +6*Math.PI+Math.sqrt(12);
+    for (var k = 0; k < 4; k++) {
+        document.write(values[k]);
+        document.write("</br>");
+    }
+    var min = values[0];
+    var max = values[0];
+    var mini =0;
+    var maxi = 0;
+
+    for (var i = 0; i < 4; i++) {
+        if (values[i] < min){
+            min = values[i];
+            mini =i;
+        }
+        if (values[i] > max){
+            max = values[i];
+            maxi = i;
+        }
+    }
+    document.write("</br>");
+    document.write(min+ " - минимальный элемент массива и его номер "+mini);
+    document.write("</br>");
+    document.write(max + " - максиимальный элемент массива и его номер  "+maxi);
+    document.write("</br></br>");
+</script>
+</head>
+<body>
+
+</body>
+</html>

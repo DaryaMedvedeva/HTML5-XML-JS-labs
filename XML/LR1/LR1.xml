@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml-stylesheet type="text/css" href="stylelr1.css"?>
+<MAIN>
+<UNIVERSITY> Университет: БГТУ
+ <FACULTY> Факультет: ФИТ 
+   <SPECIALIZATION> 
+     <NAME>ПОИТ</NAME>
+     <TIME>4 года</TIME>
+     <EXAM>Русский/белорусский, математика, физика</EXAM>
+     <BALL>330</BALL>
+     <PAGES>102</PAGES>
+   </SPECIALIZATION>
+   <SPECIALIZATION>
+     <NAME>ИСИТ</NAME>
+     <TIME>4 года</TIME>
+     <EXAM>Русский/белорусский, математика, физика</EXAM>
+     <BALL>320</BALL>
+     <PAGES>90</PAGES>
+    </SPECIALIZATION>
+   <SPECIALIZATION>
+     <NAME>ПОИМБС</NAME>
+     <TIME>4 года</TIME>
+     <EXAM>Русский/белорусский, математика, физика</EXAM>
+     <BALL>318</BALL>
+     <PAGES>73</PAGES>
+    </SPECIALIZATION>
+   <SPECIALIZATION>
+     <NAME>ДЭВИ</NAME>
+     <TIME>4 года</TIME>
+     <EXAM>Русский/белорусский, математика, физика</EXAM>
+     <BALL>324</BALL>
+     <PAGES>73</PAGES>
+    </SPECIALIZATION>
+  </FACULTY>
+ </UNIVERSITY>
+ </MAIN>

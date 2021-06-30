@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <style>
+        #case{
+            width: 100%;
+            height: 100%;
+            
+        }
+        </style>
+    </head>
+    <body>
+            <svg id="case" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <rect  cy="0" cx="0" fill="#7151c6" width="450" height="100" stroke = "black" stroke-dasharray ="10 5" stroke-width="3">
+                        <animateTransform attributeName="transform" attributeType="XML" type="translate" from="1" to="300" dur="6s" fill="freeze" repeatCount="indefinite"/>
+                        <animate attributeName="fill" from="red" to="purple" dur="6s" repeatCount="indefinite"/>
+                </rect>
+                <circle cx="102" cy="102" r="70" fill="rgb(46, 163, 0)"  fill-opacity="0.7">
+                        <animateTransform attributeName="transform" attributeType="XML" type="scale" from="1" to="1.5" dur="10s" fill="freeze" repeatCount="indefinite"/>
+                </circle> 
+                <circle cx="102" cy="102" r="70" fill="rgb(446, 163, 100)"  fill-opacity="0.7" stroke="HotPink" stroke-width="1" transform="translate(310 75)">
+                        <animate attributeName="stroke-width" from="1" to="17" dur="15s" repeatCount="indefinite"/>
+                </circle> 
+                <rect   fill="rgb(35, 57, 73)" width="100" height="100" transform="translate(10 410)">
+                        <animateTransform attributeName="transform" attributeType="XML" type="translate" from="10 410" to="520 250" dur="16s" fill="freeze" repeatCount="indefinite" begin="mousedown" end="mouseup"/>
+                      
+                </rect>
+                <line x1="320" y1="10" x2="70" y2="150" stroke="violet" stroke-width="8" transform="translate(350 410)" stroke-dasharray="10 5" stroke-dashoffset="0">
+                        <animate attributeName="stroke-dashoffset" from="75" to="0" repeatCount="indefinite" dur="5s"/>
+                </line>
+                <circle cx="102" cy="70"r="70"fill="rgb(46, 163, 0)"  fill-opacity="0.25" stroke="DarkTurquoise" stroke-width="4" transform="translate(200 550)">
+                        <animate attributeName="stroke" from="DarkTurquoise" to="Crimson" dur="8s" begin="mouseover"/>
+                </circle>
+               
+            </svg>
+            <svg width="270" height="270">
+                    <g class="g-circles"  fill="none" stroke-width="15" stroke-dasharray="25% 110%" transform="rotate(72 135 135)">
+                            <circle r="115" cx="135" cy="135" stroke="crimson"/> 
+                            <circle r="115" cx="135" cy="135" stroke="orangered" stroke-dashoffset="25%"/> 
+                            <circle r="115" cx="135" cy="135" stroke="gold" stroke-dashoffset="50%"/> 
+                    </g>
+            </svg>
+            <svg width="400" height="200" viewBox="0 0 800 400">
+                    <defs>
+                           <path id="home" d="M100 59.375l-18.75-18.75v-28.125h-12.5v15.625l-18.75-18.75-50 50v3.125h12.5v31.25h31.25v-18.75h12.5v18.75h31.25v-31.25h12.5z"/>
+                             </defs>
+                    <use xlink:href="#home" x="20" y="10"/>
+            </svg>
+            <svg width="500" height="500" viewBox="0 0 125 125">
+                    <defs>
+                            <path id="home" d="M100 59.375l-18.75-18.75v-28.125h-12.5v15.625l-18.75-18.75-50 50v3.125h12.5v31.25h31.25v-18.75h12.5v18.75h31.25v-31.25h12.5z"/>
+                             </defs>
+                    <use xlink:href="#home" x="20" y="10"/>
+            </svg>
+    </body>
+</html>

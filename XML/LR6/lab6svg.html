@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+</head>
+<body>
+<svg width="400" height="500" xmlns="http://www.w3.org/2000/svg" version="1.1">
+		<defs>
+	<linearGradient id="forrect">
+		<stop offset = "20%" stop-color = "#BB21BD"/>
+		<stop offset = "70%" stop-color = "#3B27D2"/>
+
+	</linearGradient>
+	</defs>
+	<rect x="30" y="60" height="130" width="270" stroke="blue" transform="rotate(-10)" fill="url(#forrect)"/>
+</svg>
+<svg width="270" height="500" xmlns="http://www.w3.org/2000/svg" version="1.1">
+	<defs>
+	<radialGradient id="forcircle">
+		<stop offset = "50%" stop-color = "#FCF8FC"/>
+		<stop offset = "80%" stop-color = "#0E0808"/>
+	</radialGradient>
+		</defs>
+	<circle cx="150" cy="100" r="98" fill="url(#forcircle)" stroke-width="2" stroke="green" transform="scale(0.8) " />
+</svg>
+
+<svg width="200" height="500" xmlns="http://www.w3.org/2000/svg" version="1.1">
+	<line x1="30" y1="30" x2="200" y2="200" stroke-width="3" stroke="black" transform="skewX(30)"/>
+</svg>
+<img src="image.svg" id="img">
+</html>

@@ -1,0 +1,94 @@
+<html>
+<head>
+<script>
+    document.write("</br></br>")
+    function Gruppa(n,spec,kolich) {
+
+        this.n=n;
+        this.spec=spec;
+        this.kolich=kolich;
+
+        this.add_stud=function add_stud(k) {
+            this.kolich+=k;
+            document.write('В группу ' + this.n + ' добавили '+ k + ' студентов.<br\>');
+        }
+        this.sub_stud=function sub_stud(f) {
+            this.kolich-=f;
+            document.write('В группе ' + this.n + ' отняли '+ f + ' студентов.<br\>');
+        }
+    }
+    gr1 = new Gruppa(1, 'ИСиТ', 28);
+
+
+    function Student(name1,name2,a,b,c) {
+
+        this.name1=name1;
+        this.name2=name2;
+        this.a=a;
+        this.b=b;
+        this.c=c;
+
+        this.out=function out() {
+
+            document.write('Имя:  ', this.name1, '  Фамилия:  ', this.name2, '</br>');
+        }
+        this.AverageMark=function AverageMark() {
+            var average = (this.a+this.b+this.c)/3;
+            document.write('Средний балл:  ', average, '</br>');
+        }
+    }
+    st1 = new Student('Darya', 'Medvedeva', 4, 4, 5);
+
+
+
+
+    var values = new Array();
+    values[0] = 6;
+    values[1] = 2;
+    values[2] = 7;
+    values[3] = 9;
+    var fio = new String("adsfsdasg");
+    document.write(values, "</br>");
+    delete values[2];
+    document.write(values,"</br>");
+    values[2] = 123;
+    document.write(values,"</br>");
+    if(1 in values){
+        document.write("В первом массиве имеется 2-ой элемент","</br>");
+    }
+    if("n" in gr1){
+        document.write("В объекте gr1  имеется свойство n","</br>");
+    }
+    if("name1" in st1){
+        document.write("В объекте st1  имеется свойство name1","</br>");
+    }
+
+
+    if(values instanceof Array){
+        document.write("values является массивом","</br>");
+    }else{
+        document.write("values не является массивом","</br>");
+    }
+
+    if(fio instanceof String){
+        document.write("fio является строкой","</br>");
+    }else{
+        document.write("fio не является строкой","</br>");
+    }
+    if(Student instanceof Object){
+        document.write("Student является объектом","</br>");
+    }else{
+        document.write("Student не является объект","</br>");
+    }
+    function smth(){
+        alert("sdfds")
+        return "dsgdsagsdgsdfh";
+    }
+    document.write(typeof smth);
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

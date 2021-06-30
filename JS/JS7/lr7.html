@@ -1,0 +1,146 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <script>
+        function task3(){
+    var secondName = document.forms.data.secondName.value;
+    var name = document.forms.data.name.value;
+    var kyrs =  document.forms.data.kyrs.value;
+    var profession = document.forms.data.profession.value;
+    var subject1 = document.forms.data.subject1;
+    var subject2 = document.forms.data.subject2;
+    var subject3 = document.forms.data.subject3;
+    var subject4 = document.forms.data.subject4;
+    var subject5 = document.forms.data.subject5;
+    var department = document.getElementById('department');
+    alert(kyrs);
+    var k=0;
+    if(subject1.checked!=false){k++;};
+    if(subject2.checked!=false){k++;};
+    if(subject3.checked!=false){k++;};
+    if(subject4.checked!=false){k++;};
+    if(subject5.checked!=false){k++;};
+
+    if (secondName==''){alert('Введите фамилию')}
+    else if(name==''){alert('Введите Имя')}
+    else if(kyrs==0){alert('Не выбран курс')}
+    else if(k==0){alert('Не выбран ни один предмет')}
+    else{
+    document.write(department.innerHTML + "</br>");
+    document.write("Студент " + secondName + " " + name + " специальности " + profession + " курс " +
+        kyrs + " должен сдавать следующте предметы: " );
+    document.write("</br><ul>");
+
+    if(subject1.checked){
+
+        document.write("<li>"+ subject1.value + "</li>");
+    }
+    if(subject2.checked){
+
+        document.write("<li>"+ subject2.value + "</li>");
+    }
+    if(subject3.checked){
+
+        document.write("<li>"+ subject3.value + "</li>");
+    }
+    if(subject4.checked){
+
+        document.write("<li>"+ subject4.value + "</li>");
+    }
+    if(subject5.checked){
+
+        document.write("<li>"+ subject5.value + "</li>");
+    }
+
+
+    document.write("</ul>");
+    document.write("</br></br>");
+    document.write("<form><select>");
+
+    if(subject1.checked){
+
+        document.write("<option>"+ subject1.value + "</option>");
+    }
+     if(subject2.checked){
+
+        document.write("<option>"+ subject2.value + "</option>");
+    }
+     if(subject3.checked){
+
+        document.write("<option>"+ subject3.value + "</option>");
+    }
+     if(subject4.checked){
+
+        document.write("<option>"+ subject4.value + "</option>");
+    }
+     if(subject5.checked){
+
+        document.write("<option>"+ subject5.value + "</option>");
+    }
+    document.write("</select>");
+    document.write("</form>");};
+
+
+}
+    </script>
+
+
+</head>
+
+<body>
+
+    <form name="data">
+
+        <textarea name="department" id="department" rows="3" >Факультет информационных технологий</textarea>
+
+        </br></br>
+
+
+        <input type='text' name="secondName" value="" placeholder="Фамилия" /><br />
+
+        <input type='text' name='name' value="" placeholder="Имя" /><br />
+
+
+        <h3>Специальность:</h3>
+        <select name="profession" id="">
+            <option value="POIT">ПОИТ</option>
+            <option value="DEVI">ДЭВИ</option>
+            <option value="ISIT">ИСиТ</option>
+            <option value="POIBMS">ПОИБМС</option>
+        </select>
+
+        <h3>Курс:</h3>
+        <input  type="radio" name="kyrs" value="1"/> 1
+        <input  type="radio" name="kyrs" value="2"/> 2
+        <input  type="radio" name="kyrs" value="3"/> 3
+        <input  type="radio" name="kyrs" value="4"/> 4
+
+        <h3>Предметы:</h3>
+
+        <input type='checkbox' name='subject1' value='ОИТ' />
+            ОИТ
+        <input type='checkbox' name='subject2' value='ОАП' />
+            ОАП
+        <input type='checkbox' name='subject3' value='История' />
+            История
+        <input type='checkbox' name='subject4' value='Физика' />
+            Физика
+        <input type='checkbox' name='subject5' value='Математика' />
+        Математика
+
+        </br></br>
+
+        <input type="submit" value="submit"/>
+        <input type="submit" value="reset"/>
+        </br></br>
+        <input type="submit" value="Напечатать" name="print" onclick="task3()"/>
+
+    </form>
+
+
+
+
+</body>
+
+</html>

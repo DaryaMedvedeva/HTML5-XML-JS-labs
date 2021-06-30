@@ -1,0 +1,28 @@
+<html>
+<head>
+<script>
+    var methods = ["pow", "pop", "push", "shift", "round", "floor", "slice", "sort"];
+    document.write(methods);
+    document.write("</br>");
+    var methodsOfAr = [];
+    var methodsOfMath = [];
+
+    for (var i = 0; i < 8; i++) {
+      if(methods[i] === "round" || methods[i] === "floor" || methods[i] === "pow"){
+        methodsOfMath.push(methods[i]);
+      }else{
+          methodsOfAr.push(methods[i]);
+      }
+
+    }
+    document.write('MATH: '+methodsOfMath);
+    document.write("</br>");
+    document.write('ARRAY: '+methodsOfAr);
+    document.write("</br>");
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

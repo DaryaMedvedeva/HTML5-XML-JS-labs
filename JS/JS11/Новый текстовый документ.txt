@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+<link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+</head>
+<body>
+<div id="text" style="position:absolute;"> <h2>Text</h2></div>
+<img src="cat.jfif" id="im" style="position:absolute; top: 50px">
+<script type="text/javascript">
+$("#im").draggable();
+$("#text").draggable();
+</script>
+</body>
+</html>
+ 
+<html>
+<head>
+<script type="text/javascript"
+src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js">
+</script>
+</head>
+<body>
+<img id="image" src="cat.jfif" style="position: relative; ">
+<script>
+$(document).ready(function(){
+$("#image").click(function(){
+$("#image").animate({left:1000},2000)
+})
+})
+
+</script>
+</body>
+</html>

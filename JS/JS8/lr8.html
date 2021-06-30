@@ -1,0 +1,70 @@
+<html>
+<head>
+    
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="main.css">
+    <script >
+    	onload=function(){
+    var obj1;
+    obj1=document.getElementById("myColor");
+    obj1.onmouseover=function(){
+        this.style.color='red';
+    };
+    obj1.onmouseout=function(){
+        this.style.color='black';
+    };
+
+    var obj2;
+    obj2=document.getElementById("mySize");
+    obj2.onclick=function(){
+        this.style.fontSize='40px';
+    };
+
+    var  obj3= document.getElementById("changeImg");
+    let imgVersion=false;
+    obj3.onclick= function () {
+    	obj3.src = imgVersion ? '1.jpg' : '2.jpg';
+    	imgVersion = !imgVersion;
+    };  
+
+    var obj4=document.getElementById("changeInner");
+    obj4.onclick=function () {
+        obj4.innerHTML = '<img  src="3.jpg" alt="ajnrf">';
+};
+
+    var obj5;
+    obj5=document.getElementById("changeImgWidth");
+    obj5.onmouseover=function(){
+        this.style.width='35%';
+    };
+    obj5.onmouseout=function(){
+        this.style.width='15%';
+    };
+
+    var obj6 = document.getElementById("border");
+    obj6.ondblclick = function(){
+        this.style.border = "3px solid green";
+    };
+
+};
+
+    </script>
+</head>
+
+<body>
+
+<div id="myColor"> <h1>Я меняю цвет при наведении</h1></div>
+</br>
+<div id="mySize"> <h1>Я расту!!! (Нажми на меня)</h1></div>
+</br>
+<div><img id="changeImg" src="1.jpg" alt="ajnrf"></div>
+</br>
+<div id="changeInner">Нажми и произойдет магия!</div>
+</br>
+<div><img id="changeImgWidth" src="1.jpg" alt="ajnrf"></div>
+</br>
+<div  id="border"> <h1 > Нажми на меня дважды! </h1> </div>
+</body>
+
+</html>
+

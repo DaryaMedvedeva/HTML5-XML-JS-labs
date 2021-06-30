@@ -1,0 +1,57 @@
+<html>
+<head>
+<script>
+		string = "Медведева Дарья Игоревна";
+		document.write("<table border=1>");
+		document.write('<tr>');
+		document.write ('<td>');
+		document.write ('Исходные данные');
+		document.write ('</td>');
+		document.write ('<td>');
+		document.write (string);
+		document.write ('</td>');
+		document.write('</tr>');
+
+		document.write('<tr>');
+		document.write ('<td>');
+		document.write ('Длинна строки');
+		document.write ('</td>');
+		document.write ('<td>');
+		document.write (string.length);
+		document.write ('</td>');
+		document.write('</tr>');
+
+		document.write('<tr>');
+		document.write ('<td>');
+		document.write ('Верхний регистр');
+		document.write ('</td>');
+		document.write ('<td>');
+		document.write (string.toUpperCase());
+		document.write ('</td>');
+		document.write('</tr>');
+
+		document.write('<tr>');
+		document.write ('<td>');
+		document.write ('Нижний регистр');
+		document.write ('</td>');
+		document.write ('<td>');
+		document.write (string.toLowerCase());
+		document.write ('</td>');
+		document.write('</tr>');
+
+		document.write('<tr>');
+		document.write ('<td>');
+		document.write ('Инициалы');
+		document.write ('</td>');
+		document.write ('<td>');
+		 document.write(string.replace(string, "МДИ"));
+		document.write ('</td>');
+		document.write('</tr>');
+
+        document.write("</table>");
+</script>
+</head>
+<body>
+
+</body>
+</html>
